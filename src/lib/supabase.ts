@@ -16,6 +16,7 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
     autoRefreshToken: true,
   }
 })
+export { supabaseUrl as SUPABASE_URL };
 
 // Add initialization check with enhanced debugging
 console.log("Supabase client initializing...")
@@ -32,3 +33,4 @@ supabase.auth.getSession().then(({ data, error }) => {
 }).catch(error => {
     console.error("Supabase client initialization check failed:", error.message)
 })
+
