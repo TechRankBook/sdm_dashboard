@@ -115,15 +115,6 @@ export const Login: React.FC = () => {
               )}
             </Button>
           </form>
-          
-          <div className="mt-6 p-3 bg-blue-50 border border-blue-200 rounded-lg">
-            <div className="text-sm text-blue-800">
-              <p className="font-medium">Debug Information:</p>
-              <p className="text-xs text-blue-600 mt-1">
-                Check browser console (F12) for detailed authentication logs
-              </p>
-            </div>
-          </div>
         </CardContent>
       </Card>
     </div>
